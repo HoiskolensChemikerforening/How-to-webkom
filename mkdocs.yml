@@ -1,0 +1,6 @@
+site_name: Webkom instruks
+nav:
+  - Kom i gang: index.md
+  - Om: about.md
+
+theme: readthedocs
