@@ -134,6 +134,51 @@ og
 CREATE DATABASE webkom;
 ```
 
+## Last ned kode
+
+### Backend
+
+For å laste ned backend koden må du opprette en mappe PCen din, helst ikke på icloud eller onedrive. Åpne terminalen i denne mappen og kjør kommandoen under.
+
+```
+git clone git@github.com:HoiskolensChemikerforening/hc-backend.git
+```
+
+Denne kommandoen laster ned en mappe som heter `hc-backend` som inneholder koden. Naviger inn i denne mappen (i terminalen) ved å kjøre kommandoen under.
+
+```
+cd hc-backend
+```
+
+I denne mappen må det opprettes et virtual environment for å ha en avkoblet Python versjon ansvarlig for å kjøre backend koden. Dette gjøres ved å kjøre kommandoen under. 
+
+**Windows** 
+
+```
+py -3.7 -m venv venv
+```
+
+```
+.\venv\Scripts\activate
+```
+
+**MacOS**
+
+```
+python3.7 -m venv venv
+```
+
+```
+source venv/bin/activate
+```
+
+Den første kommandoen over opprette en ny mappe som heter `venv` i `hc-backend` som innholder en avkoblet versjon av Python 3.7. Den andre kommandoen aktiverer denne versjoen. Dobbel skjekk at det står `(venv)` i terminalen nå.
+
+Nå kan vi fortsette med å installere de nødvendige pakkene ved hjelp av `pip`. HC nettsiden bruker mange forskjellige pakker. Å installere hver pakke for seg hadde derfor tatt lang tid. Heldigvis finnes det en kommando som kan installere alle pakker automatisk. 
+
+```
+pip install -r requirements/development.txt
+```
 
 
 
