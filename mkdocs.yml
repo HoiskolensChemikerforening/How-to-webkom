@@ -5,6 +5,8 @@ nav:
 
 theme: readthedocs
 
+plugins:
+  - include-markdown
 
 extra_css:
   - assets/custom.css
@@ -17,6 +19,8 @@ markdown_extensions:
       permalink: true
   - attr_list
   - md_in_html
+
+
 
 
   

@@ -1,26 +1,3 @@
-# Velkommen til Webkomiteen
-
-Gratulerer med opptak i Webkomiteen den nest beste komiteen i HC (Sportskom <3). I løpet av de neste årene kommer du til å lære utrulig mye kult og denne guiden skal hjelpe deg med å komme i gang. Selv om jeg har vært i Webkomiteen i snart 3 år finnes det fortsatt oppgaver jeg ikke har vært borte i før. I mine øyene er Webkoms hovedoppgave å vedlikeholde kunnskap. Dere kommer til å lære mye nytt i starten som kan føles litt overveldene, men det er absolutt ikke forventet at dere husker alt første gangen, dette kommer med tiden. Progammering er mengdetrening. Still spørsmål, se på gammel kode og spør Chat eller Google så kommer dette til å gå fint.  
-
-
-
-
-
-## Installer programvare
-
-<div class="tabs">
-  <input class="tab-radio" type="radio" id="tab1" name="tab" checked>
-  <input class="tab-radio" type="radio" id="tab2" name="tab">
-    <input class="tab-radio" type="radio" id="tab3" name="tab">
-  <div class="tab-labels">
-    <label class="tab-label active" for="tab1">Windows</label>
-    <label class="tab-label" for="tab2">Mac</label>
-    <label class="tab-label" for="tab3">Linux</label>
-  </div>
-</div>
-
-<div id="Windows" class="tab-block"></div>
-
 For å jobbe med HC-nettsiden må koden og programvare lastes ned. Koden er delt opp i frontend og backend kode. Backend koden kjører HC-nettsiden som den er i dag. Frontend koden innholder kode for å endre nettsidens utseende. Denne koden blir fortsatt utvilket og er ikke en del av nettsiden i dag. I tillegg til koden bruker vi ulike progammer som må installeres på PCen for å kunne jobbe med koden. 
 
 **Programmer:**
@@ -317,25 +294,3 @@ python manage.py runserver
 - npm install
 
 - npm start 
-
-    
-<div id="MacOS" class="tab-block"></div>
-
-MacOS is shit
-
-$\alpha$
-
-
-**buhu**
-
-```python
-print("dogshit")
-```
-<div id="Linux" class="tab-block"></div>
-
-linuuuux
-  
-
-
-
-
