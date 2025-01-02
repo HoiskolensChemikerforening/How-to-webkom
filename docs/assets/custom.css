@@ -1,0 +1,50 @@
+/* General Styles */
+.tab-radio {
+    display: none;
+}
+
+.tab-labels {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0rem;
+    box-shadow: 0 -0.1rem rgba(0, 0, 0, 0.1) inset;
+    margin-bottom: 0.5rem;
+    overflow: hidden;
+    font-size: large;
+
+}
+
+.tab-labels label {
+    padding: 0.7rem 1rem;
+    cursor: pointer;
+    margin: 0;
+    margin-right: 0.5rem;
+    transition: background-color 0.3s, color 0.3s;
+    /*font-weight: bold;*/
+}
+
+.tab-label:hover {
+    background-color: #f0f0f0;
+}
+
+
+
+.active {
+    font-weight: bolder;
+    box-shadow: 0 -0.1rem #9b59b6 inset;
+}
+
+
+.tab-block {
+    display: none;
+}
+/*
+.tab1:checked ~ .tab-content .tab-block:nth-child(1),
+.tab2:checked ~ .tab-content .tab-block:nth-child(2) {
+    display: block;
+}*(
+
+/* Make sure the first tab block is shown by default */
+.active-block {
+    display: block;
+}

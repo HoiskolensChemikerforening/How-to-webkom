@@ -4,3 +4,19 @@ nav:
   - Om: about.md
 
 theme: readthedocs
+
+
+extra_css:
+  - assets/custom.css
+extra_javascript:
+  - assets/tabs.js
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - attr_list
+  - md_in_html
+
+
+  
