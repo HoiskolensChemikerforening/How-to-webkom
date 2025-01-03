@@ -2,11 +2,15 @@ site_name: Webkom instruks
 nav:
   - Kom i gang: 
     - Introduksjon: index.md
-    - Installasjon av programvare: program.md
-    - Nedlasting av kode: code.md
+    - Installasjon av programvare: intro/program.md
+    - Nedlasting av kode: intro/code.md
   - Kurs: 
-    - Terminal: index copy.md
-  - Om: about.md
+    - GDPR: kurs/GDPR.md
+    - Terminal: kurs/terminal.md
+  - Instruks:
+    - Server: guides/server.md
+  - Webkomiteen:
+    - Om: webkom/about.md
 
 theme: readthedocs
 
