@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Installasjon av programvare - Webkom instruks</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../assets/custom.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Installasjon av programvare";
+        var mkdocs_page_input_path = "intro\\program.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Webkom instruks
+        </a>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Kom i gang</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../..">Introduksjon</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Installasjon av programvare</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#ide">IDE</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#python">Python</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#nodejs">Node.js</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#visual-studio-build-tools">Visual Studio Build Tools</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#homebrew">Homebrew</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#git">Git</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#github">GitHub</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#postgresql">PostgreSQL</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../code/">Nedlasting av kode</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Opplæring</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../kurs/intro/">Introduksjon</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../kurs/GDPR/">GDPR</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../kurs/terminal/">Terminal</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Instruks</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../guides/server/">Server</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Webkomiteen</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../webkom/about/">Om</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Webkom instruks</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Kom i gang</li>
+      <li class="breadcrumb-item active">Installasjon av programvare</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h2 id="installasjon-av-programvare">Installasjon av programvare<a class="headerlink" href="#installasjon-av-programvare" title="Permanent link">&para;</a></h2>
+<div class="tabs">
+  <input class="tab-radio" type="radio" id="tab1" name="tab" checked>
+  <input class="tab-radio" type="radio" id="tab2" name="tab">
+    <input class="tab-radio" type="radio" id="tab3" name="tab">
+  <div class="tab-labels">
+    <label class="tab-label active" for="tab1">Windows</label>
+    <label class="tab-label" for="tab2">Mac</label>
+    <label class="tab-label" for="tab3">Linux</label>
+  </div>
+</div>
+
+<p>For å jobbe med HC-nettsiden må koden og programvare lastes ned. Koden er delt opp i frontend og backend kode. Backend koden kjører HC-nettsiden som den er i dag. Frontend prosjektet innholder kode for å endre nettsidens utseende. Denne koden blir fortsatt utvilket og er ikke en del av nettsiden i dag. I tillegg til koden bruker vi ulike progammer som må installeres på PCen for å kunne begynne å jobbe. </p>
+<!-- Windows -->
+<div class="tab-block"></div>
+
+<!-- Mac -->
+<div class="tab-block"></div>
+
+<!-- Linux -->
+<div class="tab-block"></div>
+
+<!-- End -->
+<div class="tab-end"></div>
+<!-- End -->
+
+<p><strong>Programmer:</strong> </p>
+<!-- Windows -->
+<div class="tab-block"></div>
+
+<ul>
+<li>Visual Studio Code</li>
+<li>Git</li>
+<li>PostgreSQL</li>
+<li>Node.js</li>
+<li>Python 3.7</li>
+<li>Visual Studio Build Tools</li>
+</ul>
+<!-- Mac -->
+<div class="tab-block"></div>
+
+<ul>
+<li>Visual Studio Code</li>
+<li>Git</li>
+<li>PostgreSQL</li>
+<li>Node.js</li>
+<li>Python 3.7</li>
+<li>Homebrew</li>
+</ul>
+<!-- Linux -->
+<div class="tab-block"></div>
+
+<ul>
+<li>Visual Studio Code</li>
+<li>Git</li>
+<li>PostgreSQL</li>
+<li>Node.js</li>
+<li>Python 3.7</li>
+<li>Homebrew</li>
+</ul>
+<!-- End -->
+<div class="tab-end"></div>
+<!-- End -->
+
+<p>De neste avsnittene beskriver hvordan denne programvaren skal lastes ned.</p>
+<h3 id="ide">IDE<a class="headerlink" href="#ide" title="Permanent link">&para;</a></h3>
+<p>Første steget er å laste ned et integrated development environment (IDE) som Visual Studio Code (VS-Code) eller PyCharm. VS-Code kan brukes for både frontend og backend utvikling. PyCharm er en IDE som funker bra for python prosjekter og egner seg derfor bare for backend utvikling. Derfor anbefaler jeg å laste ned <a href="https://code.visualstudio.com/download">VS-Code</a>. </p>
+<p>Hvis du velger VS-Code burde du også laste ned VS-Code extensions for Python and React. Åpne VS-Code og klikk på extensions i menuen på venstre siden (Icon med fire firkanter). Søk opp Python og React hver for seg og last ned første forslaget som dukker opp. Det kan også være lurt å skru på automatisk lagring (under <strong>file</strong>).</p>
+<h3 id="python">Python<a class="headerlink" href="#python" title="Permanent link">&para;</a></h3>
+<!-- Windows -->
+<div class="tab-block"></div>
+<p>For å kjøre nettsiden bruker vi <a href="https://www.python.org/downloads/release/python-379/">Python 3.7</a>. Last ned installeren <a href="https://www.python.org/ftp/python/3.7.9/python-3.7.9-amd64.exe">her</a> dersom PCen din er et 64-bit system. Eldre PCer kan også ha et 32-bit system. I slike tilfeller brukes det <a href="https://www.python.org/ftp/python/3.7.9/python-3.7.9.exe">denne</a> installeren. Systemtypen finner du under Instillinger &gt; System &gt; Om. Bruk installeren for å installere Python. Om du får muligheten for å huke av noen bokser under installasjonsprosessen er det viktig å velge riktig. Velg <em>Install launcher for all users</em>. Ikke velg <em>add Python 3.7 to PATH</em>. Å legge Python 3.7 til PATH endrer standard python versjonen din til 3.7 som kan ødlegge andre prosjekter som bruker den globale Python interpreteren. Hvis du installere launcheren er det enkelt å bytte mellom ulike Python versjoner i terminalen. På denne måten kan du fortsette å bruke en nyere Python versjon for skoleprosjektene dine. For å skjekke at Python 3.7 har blitt installert riktig kan du kjøre kommandoen nedenfor.</p>
+<pre><code>py -3.7 --version
+</code></pre>
+<!-- Mac -->
+<div class="tab-block"></div>
+
+<p>For å kjøre nettsiden bruker vi <a href="https://www.python.org/downloads/release/python-379/">Python 3.7</a>. Last ned installeren <a href="https://www.python.org/ftp/python/3.7.9/python-3.7.9-macosx10.9.pkg">her</a> og installer Python. For å skjekke at Python 3.7 har blitt installert riktig kan du kjøre kommandoen nedenfor.</p>
+<pre><code>python3.7 --version
+</code></pre>
+<!-- Linux -->
+<div class="tab-block"></div>
+
+<p>For å kjøre nettsiden bruker vi <a href="https://www.python.org/downloads/release/python-379/">Python 3.7</a>. Last ned python ved å kjøre følgende kommandoer i terminalen.</p>
+<pre><code class="language-bash">sudo apt-get update
+sudo apt-get install python3.7.9
+</code></pre>
+<p>For å skjekke at Python 3.7 har blitt installert riktig kan du kjøre kommandoen nedenfor.</p>
+<pre><code>python3.7 --version
+</code></pre>
+<!-- End -->
+<div class="tab-end"></div>
+<!-- End -->
+
+<h3 id="nodejs">Node.js<a class="headerlink" href="#nodejs" title="Permanent link">&para;</a></h3>
+<p>Frondend koden er skrevet i React som krever at <a href="https://nodejs.org/en">Node.js</a> er installert. Installer Node.js og følg innstruksene i installeren. For å skjekke at Node.js har blitt installert riktig kan du kjøre kommandoen nedenfor.</p>
+<pre><code>npm --help
+</code></pre>
+<h3 id="visual-studio-build-tools">Visual Studio Build Tools<a class="headerlink" href="#visual-studio-build-tools" title="Permanent link">&para;</a></h3>
+<!-- Windows -->
+<div class="tab-block"></div>
+
+<p>Noen Python pakker som brukes for å kjøre nettsiden forutsetter at PCen er istand til å kombilere C++. Det er dermed nødvendig å laste ned <a href="https://aka.ms/vs/17/release/vs_BuildTools.exe">Visual Studio Build Tools</a>. Kjør installeren og velg <em>Desktop development with C++</em> under installasjonen.</p>
+<!-- Mac -->
+<div class="tab-block"></div>
+
+<p>Visual Studio Build Tools brukes for å kombilere C++ kode. På Mac er det ikke nødvendig med ekstra programvare. Du kan derfor hoppe over dette steget. </p>
+<!-- Linux -->
+<div class="tab-block"></div>
+
+<p>Visual Studio Build Tools brukes for å kombilere C++ kode. På Linux er det ikke nødvendig med ekstra programvare. Du kan derfor hoppe over dette steget. </p>
+<!-- End -->
+<div class="tab-end"></div>
+<!-- End -->
+
+<h3 id="homebrew">Homebrew<a class="headerlink" href="#homebrew" title="Permanent link">&para;</a></h3>
+<!-- Windows -->
+<div class="tab-block"></div>
+
+<p>Homebrew er en package manager for MacOS and Linux, og dermed ikke nødvendig for Windows PCer. </p>
+<!-- Mac -->
+<div class="tab-block"></div>
+
+<p><a href="https://brew.sh/">Homebrew</a> er en package manager for macOS og Linux.  Følg instruksene nedenfor eller på Homebrew's sine nettsider for å installe homebrew. Dette må gjøres gjennom terminalen. Dersom du blir spurt om passord under installasjonen er det passordet til PCen din.</p>
+<p>Innstaller homebrew ved hjelp av følgene kommando. </p>
+<pre><code>/bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&quot;
+</code></pre>
+<p>Når homebrew har blitt installert skrives det ut en lang melding i terminalen. Under <strong>next steps</strong> finner du tre ulike kommandoer som må kjøres for
+å bruke homebrew i terminalen. Kommandoene er ført opp under. Bytt ut &lt;brukernavn&gt; med ditt brukernavn. Det er anbefalt å kopiere disse kommandoene direkte 
+fra din terminal.</p>
+<pre><code>echo &gt;&gt; /Users/&lt;brukernavn&gt;/.zprofile
+</code></pre>
+<pre><code>echo 'eval &quot;$(/opt/homebrew/bin/brew shellenv)&quot;' &gt;&gt; /Users/&lt;brukernavn&gt;/.zprofile
+</code></pre>
+<pre><code>eval &quot;$(/opt/homebrew/bin/brew shellenv)&quot;
+</code></pre>
+<p>For å skjekke at homebrew har blitt installert riktig kan du kjøre kommandoen nedenfor.</p>
+<pre><code>brew help
+</code></pre>
+<!-- Linux -->
+<div class="tab-block"></div>
+
+<p><a href="https://brew.sh/">Homebrew</a> er en package manager for macOS og Linux. Denne Linux innstruksen har ikke blitt testet ennå. Jeg antar at alle nødvendige pakkene er tilgjengelig gjennom <code>apt-get</code>. Det er dermed ikke nødvendig å installere homebrew, men det kan hjelpe for å installere Postgres. Jeg antar at installasjonen ligner på fremgansmåten for MacOS.</p>
+<!-- End -->
+<div class="tab-end"></div>
+<!-- End -->
+
+<h3 id="git">Git<a class="headerlink" href="#git" title="Permanent link">&para;</a></h3>
+<p>Git er et program som brukes for å holde oversikt over ulike versjoner av koden. På denne måten kan vi alltid gå tilbake til en gammel versjon av nettsiden dersom vi har klart å ødlegge noe. I tillegg til dette jobber alle i Webkom på sin kopi av nettsiden. Git sørger også for at ulike endringer ikke ødlegger for andre. </p>
+<!-- Windows -->
+<div class="tab-block"></div>
+
+<p>Git kan lastes ned for Windows gjennom Git's sine <a href="https://git-scm.com/">nettsider</a>. Last ned installeren og følg instruksjonene. </p>
+<!-- Mac -->
+<div class="tab-block"></div>
+
+<p>For å laste ned Git på Mac må homebrew være installert på PCen. Homebrew er en package manager som brukes for å laste ned programvare blandt annet Git. For å installere Git på Mac må kommandoen nedenfor kjøres i terminalen. </p>
+<pre><code>brew install git
+</code></pre>
+<!-- Linux -->
+<div class="tab-block"></div>
+
+<p>For å laste ned Git på Linux kjører vi kommandoen nedenfor. </p>
+<pre><code>sudo apt-get update
+sudo apt-get install git
+</code></pre>
+<!-- End -->
+<div class="tab-end"></div>
+<!-- End -->
+
+<p>For å skjekke at Git har blitt installert riktig kan du kjøre kommandoen nedenfor. </p>
+<pre><code>git help
+</code></pre>
+<h3 id="github">GitHub<a class="headerlink" href="#github" title="Permanent link">&para;</a></h3>
+<p>Når Git er installert kan vi fortsette med å opprette en bruker på <a href="https://github.com/">GitHub</a>. GitHub er en nettside som hjelper oss med å lagre koden online slik at vi kan laste ned ulike versjoner. For å kunne gjøre dette må dere bli lagt til i organisasjonen <a href="https://github.com/HoiskolensChemikerforening"><em>HoiskolensChemikerforening</em></a> på GitHub. I tillegg til dette må dere generere en SSH-key for PCen deres. Denne SSH-keyen må legges til GitHub profilen deres. SSH-keyen fungerer som en type ID for PCen, slik at GitHub vet at denne PCen har tillatelse til å endre dine GitHub repositories. Hvordan man generere en SSH-key er beskrevet <a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent?platform=linux">her</a>. Hvordan SSH-keyen kan legges til GitHub profilen er beskrevet <a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account">her</a>.</p>
+<h3 id="postgresql">PostgreSQL<a class="headerlink" href="#postgresql" title="Permanent link">&para;</a></h3>
+<!-- Windows -->
+<div class="tab-block"></div>
+
+<p>PostgreSQL brukes for databasene i HC. Gå på PostgreSQL sine <a href="https://www.postgresql.org/download/windows/">nettsider</a> og last ned installeren. Jeg bruker versjon 15, men nyere versjoner burde også funke. Last ned og kjør installeren. Huk av <em>PostgreSQL Server</em>, <em>pgAdmin 4</em>, <em>Stack Builder</em> og <em>Command Line Tools</em> i første setup vinduet. Passordet du velger for superuserern postgres i neste vinduet kan velges fritt, men det er viktig at det er et passord man husker. Det funker også å velge <em>postgres</em> eller <em>webkom</em> som passord. Når du blir bedt om å velge port er det viktig at du velger <em>5432</em>. Resten kan står på default. </p>
+<p>Når PostgreSQL er installert må det opprettes en postgres bruker som heter webkom og en database med samme navn og passord. Dette kan gjøres på ulike måter enten gjennom <em>pg_admin</em> eller <em>psql shell</em>.</p>
+<p><strong>Pg-Admin:</strong></p>
+<ol>
+<li>Åpne Pg Admin</li>
+<li>Log inn med passordet du definerte under installasjonen</li>
+<li>Klikk på <em>PostgreSQL X</em> og høyreklikk på “Login/Group Roles” → Create → Login/Group Role<ul>
+<li>General-tab:<ul>
+<li>Name : webkom</li>
+</ul>
+</li>
+<li>Definition-tab<ul>
+<li>Password: webkom</li>
+</ul>
+</li>
+<li>Privileges-tab<ul>
+<li>Huk av alle</li>
+</ul>
+</li>
+<li>Klikk Save</li>
+</ul>
+</li>
+<li>Høyreklikk på <em>Databases</em> → Create → Database<ul>
+<li>General-tab<ul>
+<li>Database: webkom</li>
+<li>Owner: webkom</li>
+</ul>
+</li>
+<li>Klikk Save</li>
+</ul>
+</li>
+</ol>
+<p><strong>PSQL Shell</strong></p>
+<p>For å opprette brukeren og databasen i terminalen istedenfor å bruke Pg Admin må vi bruke psql shell. Søk opp psql i start menuen og åpne psql terminalen. Inne i psql terminalen trykker du på enter frem til du ble bedt om å oppgi passordet ditt. Dette er passordet du lagde under installasjoenen. Etter du har skrevet inn passorded kan Webkom brukeren og databasen opprettes ved å kjøre følgende kommandoer. </p>
+<pre><code>CREATE ROLE webkom WITH  LOGIN SUPERUSER PASSWORD 'webkom';
+</code></pre>
+<p>og </p>
+<pre><code>CREATE DATABASE webkom;
+</code></pre>
+<!-- Mac -->
+<div class="tab-block"></div>
+
+<p>PostgreSQL brukes for databasene i HC. PostgreSQL for MacOS lastes ned ved hjelp av Homebrew. Her er det viktig å laste ned en postgres versjon som kjører på riktig port. Jeg anbefaler derfor å laste ned versjon 15. Kjør kommandoen nedenfor.</p>
+<pre><code>brew install postgresql@15
+</code></pre>
+<p>Når postgres er installert skrives det ut en melding i terminalen med diverse kommandoer som må kjøres for å fullføre installasjoenen. Disse kommandoene må kjøres for å starte PostgreSQL og til å legge til psql til path. Skjekk installasjonen ved å kjøre kommandoen under i en ny terminal.</p>
+<pre><code>psql postgres
+</code></pre>
+<p>Kommandoen åpner psql shellen. Skjekk at nye linjer i terminalen starter med <em>postgres=#</em>. Her må det opprettes en ny postgres bruker og en database. Kjør:</p>
+<pre><code>CREATE ROLE webkom WITH  LOGIN SUPERUSER PASSWORD 'webkom';
+</code></pre>
+<p>og </p>
+<pre><code>CREATE DATABASE webkom;
+</code></pre>
+<!-- Linux -->
+<div class="tab-block"></div>
+
+<p>Finn ut av det selv og oppdater innstruksen. Lykke til! :P</p>
+<!-- End -->
+<div class="tab-end"></div>
+<!-- End -->
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../.." class="btn btn-neutral float-left" title="Introduksjon"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../code/" class="btn btn-neutral float-right" title="Nedlasting av kode">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../.." style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../code/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../assets/tabs.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,3 @@
+## Opplæring
+
+Opplæringen i Webkomiteen varer offisielt i ett semester. Det betyr at dere kommer til å bli godt kjent med en del nye konsepter på relativ kort tid. Disse sidene skal hjelpe dere med å holde oversikten i løpet av semestert. Som nevnt tidligere er programmering mengdetrening. Det er derfor ikke forventet at dere kan alt når opplæringen offiselt nærmer seg slutten. Det viktigste er å sitte igjen med en gov oversikt over de ulike konseptene. Hvis dere vet hvor dere kan få tak i de riktige ressursene for å få hjelp har dere allerede kommet et godt stykke. Og husk, selv om opplæringen offiselt er avsluttet er man aldri ferdig utlært! 

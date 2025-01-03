@@ -4,7 +4,8 @@ nav:
     - Introduksjon: index.md
     - Installasjon av programvare: intro/program.md
     - Nedlasting av kode: intro/code.md
-  - Kurs: 
+  - Opplæring: 
+    - Introduksjon: kurs/intro.md
     - GDPR: kurs/GDPR.md
     - Terminal: kurs/terminal.md
   - Instruks:

@@ -1,0 +1,3 @@
+## General Data Protection Regulation
+
+I Webkomiteen har vi tilgang til personrelatert data som faller under General Data Protection Regulation (GDPR) forordningen. Det er svært viktig å være bevisst på at vi har fått samtykke fra brukerene våre til å benytte denne dataen til spesifikke formål spesifisert i [samtykkeerklæringen](https://hc.ntnu.no/profil/registrer/#terms_modal). Bruk av personrelatert data til andre formål er ikke tillatt. Alle medlemmer i Webkomiteen er forpliktet til å gjøre seg kjent med samtykke erklæringen og Webkomiteens skriv om *GDPR og Personopplysninger* som ligger på driven. Dette avsnittet fungere som en påminnelse for alle medlemmene i komiteen, for å sikre ansvarlig drift av nettsiden også i fremtiden.
