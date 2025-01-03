@@ -1,0 +1,122 @@
+/* General Styles */
+.tab-radio {
+    display: none;
+}
+
+.tab-labels {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0rem;
+    box-shadow: 0 -0.1rem rgba(0, 0, 0, 0.1) inset;
+    margin-bottom: 0.5rem;
+    overflow: hidden;
+    font-size: large;
+
+}
+
+.tab-labels label {
+    padding: 0.7rem 1rem;
+    cursor: pointer;
+    margin: 0;
+    margin-right: 0.5rem;
+    transition: background-color 0.3s, color 0.3s;
+    /*font-weight: bold;*/
+}
+
+.tab-label:hover {
+    background-color: #f0f0f0;
+}
+
+
+
+.active {
+    font-weight: bolder;
+    box-shadow: 0 -0.1rem #9b59b6 inset;
+}
+
+
+.tab-block {
+    display: none;
+}
+/*
+.tab1:checked ~ .tab-content .tab-block:nth-child(1),
+.tab2:checked ~ .tab-content .tab-block:nth-child(2) {
+    display: block;
+}*(
+
+/* Make sure the first tab block is shown by default */
+.active-block {
+    display: block;
+}
+
+
+.rst-content .toctree-wrapper>.custom-h1,.custom-h2,.custom-h3,.custom-h4,.custom-h5,.custom-h6{
+    margin-top: 0;
+    font-weight: 700;
+    font-family: Roboto Slab,ff-tisa-web-pro,Georgia,Arial,sans-serif
+}
+
+.custom-h1 {
+    display: block;
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+    font-size: 175%
+}
+
+.custom-h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+    font-size: 150%
+}
+
+.custom-h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+    font-size: 125%
+}
+
+.custom-h4 {
+    display: block;
+    margin-top: 1.33em;
+    margin-bottom: 1.33em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+    font-size: 115%
+}
+
+.custom-h5 {
+    display: block;
+    font-size: .83em;
+    margin-top: 1.67em;
+    margin-bottom: 1.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+    font-size: 110%
+}
+
+.custom-h6 {
+    display: block;
+    font-size: .67em;
+    margin-top: 2.33em;
+    margin-bottom: 2.33em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+    font-size: 100%
+}
