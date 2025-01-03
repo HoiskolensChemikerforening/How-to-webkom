@@ -1,6 +1,11 @@
 site_name: Webkom instruks
 nav:
-  - Kom i gang: index.md
+  - Kom i gang: 
+    - Introduksjon: index.md
+    - Installasjon av programvare: program.md
+    - Nedlasting av kode: code.md
+  - Kurs: 
+    - Terminal: index copy.md
   - Om: about.md
 
 theme: readthedocs
@@ -17,6 +22,7 @@ markdown_extensions:
   - admonition
   - toc:
       permalink: true
+      toc_depth: 3 
   - attr_list
   - md_in_html
 

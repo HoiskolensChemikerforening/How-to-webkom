@@ -1,26 +1,34 @@
 **Programmer:**
 
-- Visual Studio Code
-- Visual Studio Build Tools
+- VS-Code
 - Git
 - PostgreSQL
 - Node.js
 - Python 3.7
+- Homebrew (Mac)
 
 De neste avsnittene beskriver hvordan denne programvaren skal lastes ned.
 
 ### IDE
 
-Første steget er å laste ned et integrated development environment (IDE) som Visual Studio Code (VS-Code) eller PyCharm. VS-Code kan brukes for både frontend og backend utvikling. PyCharm er en IDE som funker bra for python prosjekter og egner seg derfor bare for backend utvikling. Derfor anbefaler jeg å laste ned [VS-Code](https://code.visualstudio.com/download). 
+Første steget er å laste ned et integrated development environment (IDE) som VS-Code eller PyCharm. VS-Code kan brukes for både frontend og backend. PyCharm er en IDE som funker bra for python progammer og egner seg derfor bare for backend. Derfor anbefaler jeg å laste ned [VS-Code](https://code.visualstudio.com/download). 
 
 Hvis du velger VS-Code burde du også laste ned VS-Code extensions for Python and React. Åpne VS-Code og klikk på extensions i menuen på venstre siden (Icon med fire firkanter). Søk opp Python og React hver for seg og last ned første forslaget som dukker opp. Det kan også være lurt å skru på automatisk lagring (under **file**).
 
 ### Python
 
-For å kjøre nettsiden bruker vi [Python 3.7](https://www.python.org/downloads/release/python-379/). Last ned installeren [her](https://www.python.org/ftp/python/3.7.9/python-3.7.9-amd64.exe) dersom PCen din er et 64-bit system. Eldre PCer kan også ha et 32-bit system. I slike tilfeller brukes det [denne](https://www.python.org/ftp/python/3.7.9/python-3.7.9.exe) installeren. Systemtypen finner du under Instillinger > System > Om. Bruk installeren for å installere Python. Om du får muligheten for å huke av noen bokser under installasjonsprosessen er det viktig å velge riktig. Velg *Install launcher for all users*. Ikke velg *add Python 3.7 to PATH*. Å legge Python 3.7 til PATH endrer standard python versjonen din til 3.7 som kan ødlegge andre prosjekter som bruker den globale Python interpreteren. Hvis du installere launcheren er det enkelt å bytte mellom ulike Python versjoner i terminalen. På denne måten kan du fortsette å bruke en nyere Python versjon for skoleprosjektene dine. For å skjekke at Python 3.7 har blitt installert riktig kan du kjøre kommandoen nedenfor.
+For å kjøre nettsiden bruker vi [Python 3.7](https://www.python.org/downloads/release/python-379/). Last ned installeren [her](https://www.python.org/downloads/release/python-379/) og installer Python. Om du får muligheten for å huke av noen bokser under installasjonsprosessen er det viktig å velge riktig. Velg *Install launcher for all users*. Ikke velg *add Python 3.7 to PATH*. Å legge Python 3.7 til PATH endrer standard python versjonen din til 3.7 som kan ødlegge andre prosjekter som bruker den globale Python interpreteren. Hvis du installere launcheren er det enkelt å bytte mellom ulike Python versjoner i terminalen. På denne måten kan du fortsette å bruke en nyere Python versjon for skoleprosjektene dine. For å skjekke at Python 3.7 har blitt installert riktig kan du kjøre kommandoen nedenfor.
+
+Windows:
 
 ```
 py -3.7 --version
+```
+
+Mac:
+
+```
+python3.7 --version
 ```
 
 
@@ -34,9 +42,56 @@ npm --help
 ```
 
 
+### Homebrew
+
+[Homebrew](https://brew.sh/) er en package manager for macOS. Hvis du har en Windows PC kan du hoppe over dette steget. Følg instruksene nedenfor eller på homebrew's sine nettsider for å installe homebrew. Dette må gjøres gjennom terminalen. Dersom du blir spurt om passord under installasjonen er det passordet til PCen din.
+
+Innstaller homebrew ved hjelp av følgene kommando. 
+
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+Når homebrew har blitt installert skrives det ut en lang melding i terminalen. Under **next steps** finner du tre ulike kommandoer som må kjøres for
+å bruke homebrew i terminalen. Kommandoene er ført opp under. Bytt ut <brukernavn\> med ditt brukernavn. Det er anbefalt å kopiere disse kommandoene direkte 
+fra din terminal.
+
+```
+echo >> /Users/<brukernavn>/.zprofile
+```
+
+```
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/<brukernavn>/.zprofile
+```
+
+```
+eval "$(/opt/homebrew/bin/brew shellenv)"
+```
+
+
+For å skjekke at homebrew har blitt installert riktig kan du kjøre kommandoen nedenfor.
+
+```
+brew help
+```
+
 ### Git
 
-Git er et program som brukes for å holde oversikt over ulike versjoner av koden. På denne måten kan vi alltid gå tilbake til en gammel versjon av nettsiden dersom vi har klart å ødlegge noe. I tillegg til dette jobber alle i Webkom på sin kopi av nettsiden. Git sørger også for at ulike endringer ikke ødlegger for andre. Git kan lastes ned for Windows gjennom Git's sine [nettsider](https://git-scm.com/). Last ned installeren og følg instruksjonene. For å skjekke at Git har blitt installert riktig kan du kjøre kommandoen nedenfor.
+Git er et program som brukes for å holde oversikt over ulike versjoner av koden. På denne måten kan vi alltid gå tilbake til en gammel versjon av nettsiden dersom vi har klart å ødlegge noe. I tillegg til dette jobber alle i Webkom på sin kopi av nettsiden. Git sørger også for at ulike endringer ikke ødlegger for andre.  
+
+#### Windows
+
+Git kan lastes ned for Windows gjennom Git's sine [nettsider](https://git-scm.com/). Last ned installeren og følg instruksjonene.
+
+#### Mac
+
+For å laste ned Git på Mac må homebrew være installert på PCen. Homebrew er en package manager som brukes for å laste ned programvare blandt annet Git. For å installere Git på mac må kommandoen nedenfor kjøres i terminalen. 
+
+```
+brew install git
+```
+
+For å skjekke at Git har blitt installert riktig kan du kjøre kommandoen nedenfor. Fungerer for både Mac og Windows.
 
 ```
 git help
@@ -45,7 +100,7 @@ git help
 
 ### GitHub
 
-Når Git er installert kan vi fortsette med å opprette en bruker på [GitHub](https://github.com/). GitHub er en nettside som hjelper oss med å lagre koden online slik at vi kan laste ned ulike versjoner. For å kunne gjøre dette må dere bli lagt til i organisasjonen [*HoiskolensChemikerforening*](https://github.com/HoiskolensChemikerforening) på GitHub. I tillegg til dette må dere generere en SSH-key for PCen deres. Denne SSH-keyen må legges til GitHub profilen deres. SSH-keyen fungerer som en type ID for PCen, slik at GitHub vet at denne PCen har tillatelse til å endre dine GitHub repositories. Hvordan man generere en SSH-key er beskrevet [her](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent?platform=linux). Hvordan SSH-keyen kan legges til GitHub profilen er beskrevet [her](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
+Når Git er installert kan vi fortsette med å opprette en bruker på [GitHub](https://github.com/). GitHub er en nettside som hjeler oss med å lagre koden online slik at vi kan laste ned ulike versjoner. For å kunne gjøre dette må dere bli lagt til i organisasjonen [*HoiskolensChemikerforening*](https://github.com/HoiskolensChemikerforening) på GitHub. I tillegg til dette må dere generere en SSH-key for PCen deres. Denne SSH-keyen må legges til GitHub profilen deres. SSH-keyen fungerer som en type ID for PCen, slik at GitHub vet at denne PCen har tillatelse til å endre dine GitHub repositories. Hvordan man generere en SSH-key er beskrevet [her](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent?platform=linux). Hvordan SSH-keyen kan legges til GitHub profilen er beskrevet [her](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
 
 
 ### PostgreSQL
